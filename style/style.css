@@ -1,0 +1,63 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light: hsl(212, 45%, 89%);
+    --color-grayish: hsl(220, 15%, 55%);
+    --color-dark: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    background-color: var(--color-light);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/* Adjusting the font-size for html */
+
+html {
+    /*62.5% of 16px = 10px*/
+    font-size: 62.5%;
+}
+
+.qr__component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 1%;
+}
+
+.qr__image {
+    padding: 3%;
+    border-radius: 10%;
+    width: 100%;
+}
+
+.qr__header {
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.qr_body {
+    font-size: 15px;
+    text-align: center;
+    color: var(--color-grayish);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 5% 25%;
+    }
+}
